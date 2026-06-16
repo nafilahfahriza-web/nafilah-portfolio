@@ -1,0 +1,831 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Nafilah Daulay | Copywriter & Scriptwriter</title>
+  <meta name="description" content="Professional copywriter and scriptwriter portfolio with campaign work, scripts, brand voice projects, and contact form.">
+  <style>
+    :root {
+      --sky: #7fb9e6;
+      --lavender: #d6beea;
+      --butter: #f4d77a;
+      --matcha: #b7c96a;
+      --pink: #f98ba9;
+      --tangerine: #ff8f45;
+      --ink: #23232a;
+      --muted: #67636d;
+      --paper: #fffaf2;
+      --white: #ffffff;
+      --line: rgba(35, 35, 42, 0.14);
+      --shadow: 0 20px 60px rgba(35, 35, 42, 0.14);
+      font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+    }
+
+    * { box-sizing: border-box; }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      margin: 0;
+      color: var(--ink);
+      background:
+        linear-gradient(135deg, rgba(127, 185, 230, 0.34), rgba(214, 190, 234, 0.28) 34%, rgba(244, 215, 122, 0.28) 68%, rgba(255, 143, 69, 0.16)),
+        var(--paper);
+    }
+
+    a { color: inherit; text-decoration: none; }
+
+    button,
+    input,
+    textarea {
+      font: inherit;
+    }
+
+    .site-shell {
+      min-height: 100vh;
+      overflow: hidden;
+    }
+
+    .nav {
+      position: sticky;
+      top: 0;
+      z-index: 20;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 18px;
+      padding: 18px clamp(18px, 5vw, 64px);
+      background: rgba(255, 250, 242, 0.82);
+      border-bottom: 1px solid var(--line);
+      backdrop-filter: blur(18px);
+    }
+
+    .brand {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      min-width: max-content;
+      font-weight: 800;
+      letter-spacing: 0;
+    }
+
+    .brand-mark {
+      display: grid;
+      width: 40px;
+      height: 40px;
+      place-items: center;
+      border-radius: 8px;
+      background: conic-gradient(from 20deg, var(--sky), var(--lavender), var(--pink), var(--tangerine), var(--butter), var(--matcha), var(--sky));
+      box-shadow: 0 10px 24px rgba(35, 35, 42, 0.16);
+      color: var(--white);
+    }
+
+    .nav-links {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: flex-end;
+      gap: 8px;
+    }
+
+    .nav-links a {
+      padding: 10px 12px;
+      border-radius: 8px;
+      color: var(--muted);
+      font-size: 0.95rem;
+      font-weight: 700;
+    }
+
+    .nav-links a:hover,
+    .nav-links a:focus-visible {
+      color: var(--ink);
+      background: rgba(127, 185, 230, 0.22);
+      outline: none;
+    }
+
+    .hero {
+      display: grid;
+      grid-template-columns: minmax(0, 1.08fr) minmax(300px, 0.92fr);
+      gap: clamp(30px, 6vw, 80px);
+      align-items: center;
+      padding: clamp(46px, 8vw, 90px) clamp(18px, 5vw, 64px) 42px;
+    }
+
+    .eyebrow {
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+      margin: 0 0 18px;
+      color: #514c58;
+      font-size: 0.88rem;
+      font-weight: 800;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+    }
+
+    .eyebrow::before {
+      content: "";
+      width: 38px;
+      height: 4px;
+      border-radius: 99px;
+      background: var(--tangerine);
+    }
+
+    h1,
+    h2,
+    h3,
+    p {
+      margin-top: 0;
+    }
+
+    h1 {
+      max-width: 820px;
+      margin-bottom: 24px;
+      font-size: clamp(3rem, 7vw, 6.6rem);
+      line-height: 0.95;
+      letter-spacing: 0;
+    }
+
+    .hero-copy {
+      max-width: 690px;
+      color: var(--muted);
+      font-size: clamp(1.06rem, 1.5vw, 1.28rem);
+      line-height: 1.7;
+    }
+
+    .hero-actions {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 12px;
+      margin-top: 30px;
+    }
+
+    .button {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      min-height: 48px;
+      padding: 13px 18px;
+      border: 2px solid var(--ink);
+      border-radius: 8px;
+      background: var(--ink);
+      color: var(--white);
+      font-weight: 850;
+      cursor: pointer;
+      transition: transform 180ms ease, box-shadow 180ms ease, background 180ms ease;
+    }
+
+    .button:hover,
+    .button:focus-visible {
+      transform: translateY(-2px);
+      box-shadow: 0 14px 30px rgba(35, 35, 42, 0.18);
+      outline: none;
+    }
+
+    .button.secondary {
+      background: rgba(255, 255, 255, 0.6);
+      color: var(--ink);
+    }
+
+    .hero-board {
+      position: relative;
+      min-height: 520px;
+      border: 2px solid var(--ink);
+      border-radius: 8px;
+      overflow: hidden;
+      box-shadow: var(--shadow);
+      background: var(--white);
+    }
+
+    .palette-grid {
+      position: absolute;
+      inset: 0;
+      display: block;
+      background: url("Increment_ Documentation.jpg") center / cover no-repeat;
+    }
+
+    .palette-grid::after {
+      content: "";
+      position: absolute;
+      inset: 0;
+      background: rgba(255, 250, 242, 0.12);
+    }
+
+    .palette-grid span {
+      display: none;
+    }
+
+    .sky { background: var(--sky); }
+    .lavender { background: var(--lavender); }
+    .butter { background: var(--butter); }
+    .matcha { background: var(--matcha); }
+    .pink { background: var(--pink); }
+    .tangerine { background: var(--tangerine); }
+
+    .script-card {
+      position: absolute;
+      left: 50%;
+      top: 50%;
+      width: min(84%, 390px);
+      transform: translate(-50%, -50%) rotate(-2deg);
+      padding: 26px;
+      border: 2px solid var(--ink);
+      border-radius: 8px;
+      background: rgba(255, 250, 242, 0.92);
+      box-shadow: 0 16px 40px rgba(35, 35, 42, 0.2);
+    }
+
+    .script-line {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      margin-bottom: 14px;
+      color: var(--muted);
+      font-size: 0.92rem;
+      font-weight: 800;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+    }
+
+    .script-line::before {
+      content: "";
+      width: 13px;
+      height: 13px;
+      border-radius: 50%;
+      background: var(--pink);
+      box-shadow: 20px 0 0 var(--butter), 40px 0 0 var(--matcha);
+    }
+
+    .script-card strong {
+      display: block;
+      margin-bottom: 14px;
+      font-size: clamp(1.8rem, 4vw, 2.8rem);
+      line-height: 1;
+    }
+
+    .script-card p {
+      margin-bottom: 0;
+      color: var(--muted);
+      line-height: 1.55;
+    }
+
+    .section {
+      padding: 64px clamp(18px, 5vw, 64px);
+    }
+
+    .section-heading {
+      display: flex;
+      align-items: end;
+      justify-content: space-between;
+      gap: 22px;
+      margin-bottom: 26px;
+    }
+
+    .section-heading h2 {
+      margin-bottom: 0;
+      font-size: clamp(2rem, 4vw, 4rem);
+      line-height: 1;
+    }
+
+    .section-heading p {
+      max-width: 520px;
+      margin-bottom: 0;
+      color: var(--muted);
+      line-height: 1.65;
+    }
+
+    .stats {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 12px;
+      margin-top: 26px;
+    }
+
+    .stat {
+      min-height: 122px;
+      padding: 20px;
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      background: rgba(255, 255, 255, 0.56);
+    }
+
+    .stat strong {
+      display: block;
+      margin-bottom: 8px;
+      font-size: clamp(1.8rem, 3vw, 3rem);
+      line-height: 1;
+    }
+
+    .stat span {
+      color: var(--muted);
+      font-weight: 700;
+    }
+
+    .filters {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      margin-bottom: 24px;
+    }
+
+    .filter-button {
+      min-height: 42px;
+      padding: 10px 14px;
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      background: rgba(255, 255, 255, 0.62);
+      color: var(--muted);
+      font-weight: 850;
+      cursor: pointer;
+    }
+
+    .filter-button:hover,
+    .filter-button:focus-visible,
+    .filter-button.active {
+      border-color: var(--ink);
+      background: var(--butter);
+      color: var(--ink);
+      outline: none;
+    }
+
+    .gallery {
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: 16px;
+    }
+
+    .project {
+      display: grid;
+      min-height: 330px;
+      border: 2px solid var(--ink);
+      border-radius: 8px;
+      overflow: hidden;
+      background: var(--white);
+      box-shadow: 0 14px 36px rgba(35, 35, 42, 0.09);
+      transition: opacity 220ms ease, transform 220ms ease, box-shadow 220ms ease;
+    }
+
+    .project:hover {
+      transform: translateY(-5px);
+      box-shadow: var(--shadow);
+    }
+
+    .project.hidden {
+      display: none;
+    }
+
+    .project-art {
+      display: grid;
+      min-height: 150px;
+      place-items: center;
+      padding: 24px;
+      color: rgba(35, 35, 42, 0.72);
+      font-size: 3.2rem;
+      font-weight: 950;
+      line-height: 1;
+    }
+
+    .project:nth-child(1) .project-art { background: linear-gradient(135deg, var(--sky), var(--butter)); }
+    .project:nth-child(2) .project-art { background: linear-gradient(135deg, var(--lavender), var(--pink)); }
+    .project:nth-child(3) .project-art { background: linear-gradient(135deg, var(--matcha), var(--butter)); }
+    .project:nth-child(4) .project-art { background: linear-gradient(135deg, var(--tangerine), var(--pink)); }
+    .project:nth-child(5) .project-art { background: linear-gradient(135deg, var(--sky), var(--lavender)); }
+    .project:nth-child(6) .project-art { background: linear-gradient(135deg, var(--matcha), var(--tangerine)); }
+
+    .project-body {
+      padding: 22px;
+    }
+
+    .tag {
+      display: inline-flex;
+      margin-bottom: 13px;
+      padding: 6px 9px;
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      background: rgba(255, 250, 242, 0.8);
+      color: var(--muted);
+      font-size: 0.78rem;
+      font-weight: 900;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+    }
+
+    .project h3 {
+      margin-bottom: 10px;
+      font-size: 1.35rem;
+      line-height: 1.16;
+    }
+
+    .project p {
+      margin-bottom: 0;
+      color: var(--muted);
+      line-height: 1.58;
+    }
+
+    .services {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 16px;
+    }
+
+    .service {
+      min-height: 220px;
+      padding: 24px;
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      background: rgba(255, 255, 255, 0.58);
+    }
+
+    .service-icon {
+      display: grid;
+      width: 48px;
+      height: 48px;
+      margin-bottom: 18px;
+      place-items: center;
+      border: 2px solid var(--ink);
+      border-radius: 8px;
+      background: var(--tangerine);
+      font-weight: 950;
+    }
+
+    .service:nth-child(2) .service-icon { background: var(--pink); }
+    .service:nth-child(3) .service-icon { background: var(--sky); }
+    .service:nth-child(4) .service-icon { background: var(--matcha); }
+
+    .service h3 {
+      margin-bottom: 10px;
+      font-size: 1.3rem;
+    }
+
+    .service p {
+      color: var(--muted);
+      line-height: 1.62;
+    }
+
+    .contact-layout {
+      display: grid;
+      grid-template-columns: 0.82fr 1.18fr;
+      gap: 20px;
+      align-items: stretch;
+    }
+
+    .contact-panel,
+    .contact-form {
+      border: 2px solid var(--ink);
+      border-radius: 8px;
+      background: rgba(255, 255, 255, 0.7);
+      box-shadow: 0 16px 42px rgba(35, 35, 42, 0.1);
+    }
+
+    .contact-panel {
+      padding: 28px;
+      background:
+        linear-gradient(135deg, rgba(244, 215, 122, 0.84), rgba(255, 143, 69, 0.65)),
+        var(--butter);
+    }
+
+    .contact-panel h2 {
+      margin-bottom: 18px;
+      font-size: clamp(2.1rem, 4vw, 4rem);
+      line-height: 1;
+    }
+
+    .contact-panel p {
+      color: #3d372f;
+      line-height: 1.65;
+    }
+
+    .contact-list {
+      display: grid;
+      gap: 12px;
+      margin-top: 30px;
+    }
+
+    .contact-item {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      font-weight: 850;
+    }
+
+    .dot {
+      width: 12px;
+      height: 12px;
+      border-radius: 50%;
+      background: var(--ink);
+    }
+
+    .contact-form {
+      display: grid;
+      gap: 16px;
+      padding: 28px;
+    }
+
+    .form-row {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 14px;
+    }
+
+    label {
+      display: grid;
+      gap: 8px;
+      color: var(--muted);
+      font-size: 0.92rem;
+      font-weight: 850;
+    }
+
+    input,
+    textarea {
+      width: 100%;
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      background: rgba(255, 250, 242, 0.84);
+      color: var(--ink);
+      padding: 13px 14px;
+      outline: none;
+    }
+
+    textarea {
+      min-height: 146px;
+      resize: vertical;
+    }
+
+    input:focus,
+    textarea:focus {
+      border-color: var(--ink);
+      box-shadow: 0 0 0 4px rgba(127, 185, 230, 0.28);
+    }
+
+    .form-status {
+      min-height: 24px;
+      margin: -2px 0 0;
+      color: #42610f;
+      font-weight: 850;
+    }
+
+    footer {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      gap: 12px;
+      padding: 26px clamp(18px, 5vw, 64px);
+      border-top: 1px solid var(--line);
+      color: var(--muted);
+      font-weight: 750;
+    }
+
+    @media (max-width: 980px) {
+      .hero,
+      .contact-layout {
+        grid-template-columns: 1fr;
+      }
+
+      .hero-board {
+        min-height: 430px;
+      }
+
+      .stats,
+      .gallery,
+      .services {
+        grid-template-columns: repeat(2, 1fr);
+      }
+    }
+
+    @media (max-width: 700px) {
+      .nav {
+        align-items: flex-start;
+        flex-direction: column;
+      }
+
+      .nav-links {
+        justify-content: flex-start;
+      }
+
+      .section {
+        padding-top: 48px;
+        padding-bottom: 48px;
+      }
+
+      .section-heading {
+        align-items: flex-start;
+        flex-direction: column;
+      }
+
+      .stats,
+      .gallery,
+      .services,
+      .form-row {
+        grid-template-columns: 1fr;
+      }
+
+      .hero-board {
+        min-height: 390px;
+      }
+
+      .script-card {
+        padding: 20px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="site-shell">
+    <header class="nav" aria-label="Main navigation">
+      <a class="brand" href="#top" aria-label="Nafilah Daulay home">
+        <span class="brand-mark">ND</span>
+        <span>Nafilah Daulay</span>
+      </a>
+      <nav class="nav-links">
+        <a href="#work">Work</a>
+        <a href="#services">Services</a>
+        <a href="#contact">Contact</a>
+        <a href="CV_Nafilah F. Daulay.pdf" download>CV</a>
+      </nav>
+    </header>
+
+    <main id="top">
+      <section class="hero" aria-labelledby="hero-title">
+        <div>
+          <p class="eyebrow">Writer • Translator • Data Analyst</p>
+          <h1 id="hero-title">Turning ideas into meaningful projects, one step at a time.</h1>
+          <p class="hero-copy">Hi, I'm Nafilah, an English Literature graduate from Gunadarma University. Welcome to my space, where I share projects, work samples, and creative explorations that highlight my interests, skills, and experiences. Each project represents a step in my learning journey and reflects my commitment to continuous growth and improvement.
+</p>
+          <div class="hero-actions">
+            <a class="button" href="#work">Explore Work</a>
+            <a class="button secondary" href="CV_Nafilah F. Daulay.pdf" download>Download CV</a>
+          </div>
+          <div class="stats" aria-label="Portfolio highlights">
+            <div class="stat"><strong>8</strong><span>Semesters of English Study</span></div>
+<div class="stat"><strong>0+</strong><span>Practice Projects</span></div>
+<div class="stat"><strong>4</strong><span>Areas of Interest</span></div>
+<div class="stat"><strong>∞</strong><span>Learning & Growing</span></div>
+          </div>
+        </div>
+
+        <div class="hero-board" aria-label="Color palette inspired writing board">
+          <div class="palette-grid" aria-hidden="true">
+            <span class="sky"></span>
+            <span class="lavender"></span>
+            <span class="butter"></span>
+            <span class="matcha"></span>
+            <span class="pink"></span>
+            <span class="tangerine"></span>
+          </div>
+          <div class="script-card">
+            <div class="script-line">Featured line</div>
+            <strong>Learning through every project.</strong>
+            <p>A collection of practice projects, creative experiments, and writing samples that showcase my skills and interests.</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="section" id="work" aria-labelledby="work-title">
+        <div class="section-heading">
+          <h2 id="work-title">Work Gallery</h2>
+          <p>A collection of personal projects, mock campaigns, and writing samples created to explore different writing styles and creative ideas.</p>
+        </div>
+
+        <div class="filters" aria-label="Work category filters">
+  <button class="filter-button active" type="button" data-filter="all">All</button>
+  <button class="filter-button" type="button" data-filter="copywriting">Copywriting</button>
+  <button class="filter-button" type="button" data-filter="scriptwriting">Scriptwriting</button>
+  <button class="filter-button" type="button" data-filter="translation">Translation</button>
+  <button class="filter-button" type="button" data-filter="analysis">Excel/Data Analysis</button>
+</div>
+
+        <div class="gallery">
+          <article class="project" data-category="copywriting">
+            <div class="project-art">01</div>
+            <div class="project-body">
+              <span class="tag">Practice Project</span>
+              <h3>Copywriting Projects</h3>
+              <p>Practice projects focused on crafting clear, engaging, and audience-centered content, including promotional copy, product descriptions, website content, and brand messaging.</p>
+            </div>
+          </article>
+          <article class="project" data-category="scriptwriting">
+            <div class="project-art">02</div>
+            <div class="project-body">
+              <span class="tag">Practice Project</span>
+              <h3>Scriptwriting Projects</h3>
+              <p>Creative script samples developed for short-form videos, advertisements, and storytelling projects, emphasizing structure, pacing, and audience engagement.</p>
+            </div>
+          </article>
+          <article class="project" data-category="translation">
+            <div class="project-art">03</div>
+            <div class="project-body">
+              <span class="tag">Practice Project</span>
+              <h3>Translation Projects</h3>
+              <p>Translation samples demonstrating the ability to accurately convey meaning between English and Indonesian while maintaining clarity, context, and natural language flow.</p>
+            </div>
+          </article>
+
+          <article class="project" data-category="analysis">
+            <div class="project-art">04</div>
+            <div class="project-body">
+              <span class="tag">Practice Project</span>
+              <h3>Excel/Data Analysis</h3>
+              <p>Projects showcasing data cleaning, visualization, and analytical skills using real and sample datasets to identify trends, generate insights, and support decision-making.</p>
+              
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section class="section" id="services" aria-labelledby="services-title">
+        <div class="section-heading">
+          <h2 id="services-title">Specialties</h2>
+          <p>Writing support from early concept to polished final copy, built around clarity, momentum, and a memorable voice.</p>
+        </div>
+        <div class="services">
+            <article class="service">
+            <div class="service-icon">C</div>
+            <h3>Copywriting</h3>
+            <p>Creating clear, engaging, and audience-focused content, including website copy, product descriptions, promotional materials, and brand messaging.</p>
+            </article>
+            <article class="service">
+            <div class="service-icon">S</div>
+            <h3>Scriptwriting</h3>
+            <p>Creative scripts, storytelling projects, and content ideas developed through personal and portfolio projects.</p>
+          </article>
+          <article class="service">
+            <div class="service-icon">T</div>
+            <h3>Translation</h3>
+            <p>English–Indonesian, Indonesian-English translation and language support with attention to clarity, meaning, and natural communication.</p>
+          </article>
+          <article class="service">
+            <div class="service-icon">DA</div>
+            <h3>Excel/Data Analysis</h3>
+            <p>Data analysis and research skills developed through academic work, certification programs, and practical projects.</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="section" id="contact" aria-labelledby="contact-title">
+        <div class="contact-layout">
+          <aside class="contact-panel">
+            <h2 id="contact-title">Let's Connect</h2>
+            <p>Thank you for visiting my portfolio. Feel free to reach out if you'd like to discuss opportunities, collaborations, or simply connect.</p>
+            <div class="contact-list">
+              <div class="contact-item"><span class="dot"></span>nafilahfahriza@gmail.com</div>
+              <div class="contact-item"><span class="dot"></span>Linkedin.com/in/nafilah-fahriza-daulay/</div>
+              <div class="contact-item"><span class="dot"></span>Seeking opportunities to learn, contribute, and grow professionally</div>
+              <div class="contact-item"><span class="dot"></span>Based in Indonesia • Available for remote opportunities</div>
+            </div>
+          </aside>
+
+          <form class="contact-form" id="contactForm" action="https://api.web3forms.com/submit" method="POST">
+            <input type="hidden" name="access_key" value="da06c9d1-a090-4e70-87b0-1ec700b8107d">
+            <input type="hidden" name="subject" value="New portfolio inquiry from Nafilah Daulay website">
+            <div class="form-row">
+              <label>
+                Name
+                <input name="name" autocomplete="name" required placeholder="Your name">
+              </label>
+              <label>
+                Email
+                <input type="email" name="email" autocomplete="email" required placeholder="you@example.com">
+              </label>
+            </div>
+            <label>
+              Project Type
+              <input name="project" required placeholder="Launch copy, video script, brand voice...">
+            </label>
+            <label>
+              Message
+              <textarea name="message" required placeholder="Tell me what you are making, who it is for, and when you need it."></textarea>
+            </label>
+            <p class="form-status" id="formStatus" role="status" aria-live="polite"></p>
+            <button class="button" type="submit">Send Inquiry</button>
+          </form>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <span>© 2026 Nafilah Daulay. Portfolio of writing, translation, and data analysis.</span>
+      <span>Sky · Lavender · Butter · Matcha · Pink · Tangerine</span>
+    </footer>
+  </div>
+
+  <script>
+    const filterButtons = document.querySelectorAll(".filter-button");
+    const projects = document.querySelectorAll(".project");
+
+    filterButtons.forEach((button) => {
+      button.addEventListener("click", () => {
+        const filter = button.dataset.filter;
+
+        filterButtons.forEach((item) => item.classList.remove("active"));
+        button.classList.add("active");
+
+        projects.forEach((project) => {
+          const showProject = filter === "all" || project.dataset.category === filter;
+          project.classList.toggle("hidden", !showProject);
+        });
+      });
+    });  </script>
+</body>
+</html>
