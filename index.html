@@ -3,84 +3,67 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Nafilah Daulay | Copywriter & Scriptwriter</title>
-  <meta name="description" content="Professional copywriter and scriptwriter portfolio with campaign work, scripts, brand voice projects, and contact form.">
+  <title>Nafilah Daulay | Portfolio</title>
+  <meta name="description" content="Portfolio of Nafilah Daulay: writing, translation, data analysis, certificates, and creative projects.">
   <style>
     :root {
-      --sky: #7fb9e6;
-      --lavender: #d6beea;
-      --butter: #f4d77a;
-      --matcha: #b7c96a;
-      --pink: #f98ba9;
-      --tangerine: #ff8f45;
-      --ink: #23232a;
-      --muted: #67636d;
-      --paper: #fffaf2;
-      --white: #ffffff;
-      --line: rgba(35, 35, 42, 0.14);
-      --shadow: 0 20px 60px rgba(35, 35, 42, 0.14);
+      --cream: #f4edda;
+      --ink: #22222a;
+      --muted: #68606b;
+      --blue: #3d73bd;
+      --green: #6fb08e;
+      --leaf: #477f3d;
+      --pink: #f57aa4;
+      --gold: #ffc400;
+      --orange: #df5512;
+      --white: #fffdf8;
+      --line: rgba(34, 34, 42, 0.14);
+      --shadow: 0 18px 46px rgba(34, 34, 42, 0.12);
       font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
     }
 
     * { box-sizing: border-box; }
-
-    html {
-      scroll-behavior: smooth;
-    }
+    html { scroll-behavior: smooth; }
 
     body {
       margin: 0;
       color: var(--ink);
-      background:
-        linear-gradient(135deg, rgba(127, 185, 230, 0.34), rgba(214, 190, 234, 0.28) 34%, rgba(244, 215, 122, 0.28) 68%, rgba(255, 143, 69, 0.16)),
-        var(--paper);
+      background: linear-gradient(135deg, #fbf7ea, #f7ecf1 52%, #edf6ef);
     }
 
     a { color: inherit; text-decoration: none; }
-
-    button,
-    input,
-    textarea {
-      font: inherit;
-    }
-
-    .site-shell {
-      min-height: 100vh;
-      overflow: hidden;
-    }
+    button, input, textarea { font: inherit; }
 
     .nav {
       position: sticky;
       top: 0;
-      z-index: 20;
+      z-index: 10;
       display: flex;
       align-items: center;
       justify-content: space-between;
       gap: 18px;
-      padding: 18px clamp(18px, 5vw, 64px);
-      background: rgba(255, 250, 242, 0.82);
+      padding: 16px clamp(18px, 5vw, 64px);
+      background: rgba(251, 247, 234, 0.88);
       border-bottom: 1px solid var(--line);
-      backdrop-filter: blur(18px);
+      backdrop-filter: blur(16px);
     }
 
     .brand {
       display: flex;
       align-items: center;
       gap: 12px;
-      min-width: max-content;
-      font-weight: 800;
-      letter-spacing: 0;
+      font-weight: 900;
     }
 
     .brand-mark {
       display: grid;
-      width: 40px;
-      height: 40px;
+      width: 42px;
+      height: 42px;
       place-items: center;
+      border: 2px solid var(--ink);
       border-radius: 8px;
-      background: conic-gradient(from 20deg, var(--sky), var(--lavender), var(--pink), var(--tangerine), var(--butter), var(--matcha), var(--sky));
-      box-shadow: 0 10px 24px rgba(35, 35, 42, 0.16);
-      color: var(--white);
+      background: var(--gold);
+      box-shadow: 7px 7px 0 rgba(34, 34, 42, 0.09);
     }
 
     .nav-links {
@@ -91,26 +74,28 @@
     }
 
     .nav-links a {
-      padding: 10px 12px;
+      padding: 9px 11px;
       border-radius: 8px;
       color: var(--muted);
-      font-size: 0.95rem;
-      font-weight: 700;
+      font-size: 0.94rem;
+      font-weight: 800;
     }
 
     .nav-links a:hover,
     .nav-links a:focus-visible {
       color: var(--ink);
-      background: rgba(127, 185, 230, 0.22);
+      background: rgba(111, 176, 142, 0.22);
       outline: none;
     }
 
     .hero {
       display: grid;
-      grid-template-columns: minmax(0, 1.08fr) minmax(300px, 0.92fr);
-      gap: clamp(30px, 6vw, 80px);
+      grid-template-columns: minmax(0, 1.02fr) minmax(300px, 0.98fr);
+      gap: clamp(28px, 6vw, 70px);
       align-items: center;
-      padding: clamp(46px, 8vw, 90px) clamp(18px, 5vw, 64px) 42px;
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: clamp(46px, 8vw, 92px) clamp(18px, 5vw, 34px) 58px;
     }
 
     .eyebrow {
@@ -118,9 +103,9 @@
       align-items: center;
       gap: 10px;
       margin: 0 0 18px;
-      color: #514c58;
-      font-size: 0.88rem;
-      font-weight: 800;
+      color: #504a54;
+      font-size: 0.86rem;
+      font-weight: 900;
       text-transform: uppercase;
       letter-spacing: 0.08em;
     }
@@ -130,49 +115,44 @@
       width: 38px;
       height: 4px;
       border-radius: 99px;
-      background: var(--tangerine);
+      background: var(--orange);
     }
 
-    h1,
-    h2,
-    h3,
-    p {
-      margin-top: 0;
-    }
+    h1, h2, h3, p { margin-top: 0; }
 
     h1 {
-      max-width: 820px;
       margin-bottom: 24px;
-      font-size: clamp(3rem, 7vw, 6.6rem);
-      line-height: 0.95;
+      font-size: clamp(3rem, 7vw, 6rem);
+      line-height: 0.98;
       letter-spacing: 0;
     }
 
     .hero-copy {
-      max-width: 690px;
+      max-width: 720px;
       color: var(--muted);
-      font-size: clamp(1.06rem, 1.5vw, 1.28rem);
-      line-height: 1.7;
+      font-size: clamp(1.04rem, 1.45vw, 1.2rem);
+      line-height: 1.75;
+      text-align: justify;
     }
 
     .hero-actions {
       display: flex;
       flex-wrap: wrap;
       gap: 12px;
-      margin-top: 30px;
+      margin-top: 28px;
     }
 
     .button {
       display: inline-flex;
       align-items: center;
       justify-content: center;
-      min-height: 48px;
-      padding: 13px 18px;
+      min-height: 46px;
+      padding: 12px 17px;
       border: 2px solid var(--ink);
       border-radius: 8px;
       background: var(--ink);
       color: var(--white);
-      font-weight: 850;
+      font-weight: 900;
       cursor: pointer;
       transition: transform 180ms ease, box-shadow 180ms ease, background 180ms ease;
     }
@@ -180,100 +160,28 @@
     .button:hover,
     .button:focus-visible {
       transform: translateY(-2px);
-      box-shadow: 0 14px 30px rgba(35, 35, 42, 0.18);
+      box-shadow: 0 12px 26px rgba(34, 34, 42, 0.16);
       outline: none;
     }
 
     .button.secondary {
-      background: rgba(255, 255, 255, 0.6);
+      background: rgba(255, 253, 248, 0.72);
       color: var(--ink);
     }
 
-    .hero-board {
-      position: relative;
-      min-height: 520px;
+    .hero-figure { margin: 0; }
+    .hero-figure figcaption { margin-top: 10px; color: var(--muted); font-size: 0.9rem; }
+
+    .hero-art {
+      min-height: 580px;
       border: 2px solid var(--ink);
       border-radius: 8px;
-      overflow: hidden;
+      background: var(--cream) url("v821-ning-01b.jpg") center / cover no-repeat;
       box-shadow: var(--shadow);
-      background: var(--white);
     }
 
-    .palette-grid {
-      position: absolute;
-      inset: 0;
-      display: block;
-      background: url("Increment_ Documentation.jpg") center / cover no-repeat;
-    }
-
-    .palette-grid::after {
-      content: "";
-      position: absolute;
-      inset: 0;
-      background: rgba(255, 250, 242, 0.12);
-    }
-
-    .palette-grid span {
-      display: none;
-    }
-
-    .sky { background: var(--sky); }
-    .lavender { background: var(--lavender); }
-    .butter { background: var(--butter); }
-    .matcha { background: var(--matcha); }
-    .pink { background: var(--pink); }
-    .tangerine { background: var(--tangerine); }
-
-    .script-card {
-      position: absolute;
-      left: 50%;
-      top: 50%;
-      width: min(84%, 390px);
-      transform: translate(-50%, -50%) rotate(-2deg);
-      padding: 26px;
-      border: 2px solid var(--ink);
-      border-radius: 8px;
-      background: rgba(255, 250, 242, 0.92);
-      box-shadow: 0 16px 40px rgba(35, 35, 42, 0.2);
-    }
-
-    .script-line {
-      display: flex;
-      align-items: center;
-      gap: 10px;
-      margin-bottom: 14px;
-      color: var(--muted);
-      font-size: 0.92rem;
-      font-weight: 800;
-      text-transform: uppercase;
-      letter-spacing: 0.08em;
-    }
-
-    .script-line::before {
-      content: "";
-      width: 13px;
-      height: 13px;
-      border-radius: 50%;
-      background: var(--pink);
-      box-shadow: 20px 0 0 var(--butter), 40px 0 0 var(--matcha);
-    }
-
-    .script-card strong {
-      display: block;
-      margin-bottom: 14px;
-      font-size: clamp(1.8rem, 4vw, 2.8rem);
-      line-height: 1;
-    }
-
-    .script-card p {
-      margin-bottom: 0;
-      color: var(--muted);
-      line-height: 1.55;
-    }
-
-    .section {
-      padding: 64px clamp(18px, 5vw, 64px);
-    }
+    .section { padding: 62px clamp(18px, 5vw, 64px); }
+    .section-inner { max-width: 1180px; margin: 0 auto; }
 
     .section-heading {
       display: flex;
@@ -283,61 +191,33 @@
       margin-bottom: 26px;
     }
 
-    .section-heading h2 {
-      margin-bottom: 0;
-      font-size: clamp(2rem, 4vw, 4rem);
-      line-height: 1;
-    }
+    .section-heading h2 { margin-bottom: 0; font-size: clamp(2rem, 4vw, 3.8rem); line-height: 1; }
+    .section-heading p { max-width: 560px; margin-bottom: 0; color: var(--muted); line-height: 1.65; text-align: justify; }
 
-    .section-heading p {
-      max-width: 520px;
-      margin-bottom: 0;
-      color: var(--muted);
-      line-height: 1.65;
-    }
+    .stats, .gallery, .services, .cert-grid { display: grid; gap: 16px; }
+    .stats { grid-template-columns: repeat(4, minmax(0, 1fr)); margin-top: 32px; }
 
-    .stats {
-      display: grid;
-      grid-template-columns: repeat(4, 1fr);
-      gap: 12px;
-      margin-top: 26px;
-    }
-
-    .stat {
-      min-height: 122px;
-      padding: 20px;
+    .stat, .project, .service, .cert-card, .contact-panel, .contact-form {
       border: 1px solid var(--line);
       border-radius: 8px;
-      background: rgba(255, 255, 255, 0.56);
+      background: rgba(255, 253, 248, 0.72);
+      box-shadow: 0 12px 34px rgba(34, 34, 42, 0.08);
     }
 
-    .stat strong {
-      display: block;
-      margin-bottom: 8px;
-      font-size: clamp(1.8rem, 3vw, 3rem);
-      line-height: 1;
-    }
+    .stat { min-height: 112px; padding: 20px; }
+    .stat strong { display: block; margin-bottom: 8px; font-size: clamp(1.7rem, 3vw, 2.8rem); line-height: 1; }
+    .stat span { color: var(--muted); font-weight: 800; }
 
-    .stat span {
-      color: var(--muted);
-      font-weight: 700;
-    }
-
-    .filters {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 10px;
-      margin-bottom: 24px;
-    }
+    .filters { display: flex; flex-wrap: wrap; gap: 10px; margin-bottom: 22px; }
 
     .filter-button {
-      min-height: 42px;
-      padding: 10px 14px;
+      min-height: 40px;
+      padding: 9px 13px;
       border: 1px solid var(--line);
       border-radius: 8px;
-      background: rgba(255, 255, 255, 0.62);
+      background: rgba(255, 253, 248, 0.74);
       color: var(--muted);
-      font-weight: 850;
+      font-weight: 900;
       cursor: pointer;
     }
 
@@ -345,226 +225,168 @@
     .filter-button:focus-visible,
     .filter-button.active {
       border-color: var(--ink);
-      background: var(--butter);
+      background: var(--gold);
       color: var(--ink);
       outline: none;
     }
 
-    .gallery {
-      display: grid;
-      grid-template-columns: repeat(3, minmax(0, 1fr));
-      gap: 16px;
-    }
+    .gallery { grid-template-columns: repeat(3, 1fr); }
 
     .project {
-      display: grid;
-      min-height: 330px;
-      border: 2px solid var(--ink);
-      border-radius: 8px;
+      display: flex;
+      min-height: 365px;
       overflow: hidden;
-      background: var(--white);
-      box-shadow: 0 14px 36px rgba(35, 35, 42, 0.09);
-      transition: opacity 220ms ease, transform 220ms ease, box-shadow 220ms ease;
+      flex-direction: column;
+      border: 2px solid var(--ink);
+      transition: transform 180ms ease, box-shadow 180ms ease;
+      cursor: pointer;
     }
 
-    .project:hover {
-      transform: translateY(-5px);
-      box-shadow: var(--shadow);
-    }
-
-    .project.hidden {
-      display: none;
-    }
+    .project:hover { transform: translateY(-4px); box-shadow: var(--shadow); }
+    .project.hidden { display: none; }
 
     .project-art {
       display: grid;
-      min-height: 150px;
+      min-height: 132px;
       place-items: center;
-      padding: 24px;
-      color: rgba(35, 35, 42, 0.72);
-      font-size: 3.2rem;
+      color: rgba(34, 34, 42, 0.76);
+      font-size: 2.7rem;
       font-weight: 950;
-      line-height: 1;
     }
 
-    .project:nth-child(1) .project-art { background: linear-gradient(135deg, var(--sky), var(--butter)); }
-    .project:nth-child(2) .project-art { background: linear-gradient(135deg, var(--lavender), var(--pink)); }
-    .project:nth-child(3) .project-art { background: linear-gradient(135deg, var(--matcha), var(--butter)); }
-    .project:nth-child(4) .project-art { background: linear-gradient(135deg, var(--tangerine), var(--pink)); }
-    .project:nth-child(5) .project-art { background: linear-gradient(135deg, var(--sky), var(--lavender)); }
-    .project:nth-child(6) .project-art { background: linear-gradient(135deg, var(--matcha), var(--tangerine)); }
+    .project:nth-child(1) .project-art { background: linear-gradient(135deg, var(--pink), var(--gold)); }
+    .project:nth-child(2) .project-art { background: linear-gradient(135deg, var(--pink), var(--cream)); }
+    .project:nth-child(3) .project-art { background: linear-gradient(135deg, var(--green), var(--gold)); }
+    .project:nth-child(4) .project-art { background: linear-gradient(135deg, var(--orange), var(--blue)); }
+    .project:nth-child(5) .project-art { background: linear-gradient(135deg, var(--green), var(--blue)); }
+    .project:nth-child(6) .project-art { background: linear-gradient(135deg, var(--gold), var(--orange)); }
+    .project:nth-child(7) .project-art { background: linear-gradient(135deg, var(--blue), var(--pink)); }
+    .project:nth-child(8) .project-art { background: linear-gradient(135deg, var(--green), var(--pink)); }
+
+    .project-body, .service, .cert-card { padding: 22px; }
 
     .project-body {
-      padding: 22px;
+      display: flex;
+      flex: 1;
+      flex-direction: column;
     }
 
     .tag {
-      display: inline-flex;
-      margin-bottom: 13px;
+      width: max-content;
+      max-width: 100%;
+      margin-bottom: 12px;
       padding: 6px 9px;
       border: 1px solid var(--line);
       border-radius: 8px;
-      background: rgba(255, 250, 242, 0.8);
+      background: rgba(255, 253, 248, 0.86);
       color: var(--muted);
-      font-size: 0.78rem;
-      font-weight: 900;
+      font-size: 0.76rem;
+      font-weight: 950;
       text-transform: uppercase;
       letter-spacing: 0.08em;
     }
 
-    .project h3 {
-      margin-bottom: 10px;
-      font-size: 1.35rem;
-      line-height: 1.16;
-    }
+    .project h3, .service h3, .cert-card h3 { margin-bottom: 10px; font-size: 1.24rem; }
+    .project p, .service p, .cert-card p { color: var(--muted); line-height: 1.58; }
 
-    .project p {
-      margin-bottom: 0;
-      color: var(--muted);
-      line-height: 1.58;
-    }
-
-    .services {
+    .project-links {
       display: grid;
-      grid-template-columns: repeat(3, 1fr);
-      gap: 16px;
+      gap: 8px;
+      margin-top: auto;
+      padding-top: 14px;
     }
 
-    .service {
-      min-height: 220px;
-      padding: 24px;
+    .project-links a {
+      padding: 9px 10px;
       border: 1px solid var(--line);
       border-radius: 8px;
-      background: rgba(255, 255, 255, 0.58);
+      background: rgba(255, 253, 248, 0.78);
+      color: var(--ink);
+      font-size: 0.92rem;
+      font-weight: 850;
+      text-align: center;
     }
 
-    .service-icon {
+    .project-links a:hover,
+    .project-links a:focus-visible {
+      border-color: var(--ink);
+      background: rgba(111, 176, 142, 0.28);
+      outline: none;
+    }
+
+    /* ---- "View Case Study" button on data analysis cards ---- */
+    .open-modal {
+      display: block;
+      width: 100%;
+      margin-top: auto;
+      padding: 10px;
+      border: 2px solid var(--ink);
+      border-radius: 8px;
+      background: var(--ink);
+      color: var(--white);
+      font-size: 0.92rem;
+      font-weight: 900;
+      text-align: center;
+      cursor: pointer;
+      transition: background 180ms ease, transform 180ms ease;
+    }
+
+    .open-modal:hover { background: #3a3a45; transform: translateY(-1px); }
+
+    .services, .cert-grid { grid-template-columns: repeat(3, minmax(0, 1fr)); }
+    .service, .cert-card { min-height: 210px; }
+
+    .icon {
       display: grid;
-      width: 48px;
-      height: 48px;
-      margin-bottom: 18px;
+      width: 46px;
+      height: 46px;
+      margin-bottom: 16px;
       place-items: center;
       border: 2px solid var(--ink);
       border-radius: 8px;
-      background: var(--tangerine);
+      background: var(--green);
       font-weight: 950;
     }
 
-    .service:nth-child(2) .service-icon { background: var(--pink); }
-    .service:nth-child(3) .service-icon { background: var(--sky); }
-    .service:nth-child(4) .service-icon { background: var(--matcha); }
-
-    .service h3 {
-      margin-bottom: 10px;
-      font-size: 1.3rem;
-    }
-
-    .service p {
-      color: var(--muted);
-      line-height: 1.62;
-    }
+    .service:nth-child(2) .icon, .cert-card:nth-child(2) .icon { background: var(--pink); }
+    .service:nth-child(3) .icon, .cert-card:nth-child(3) .icon { background: var(--blue); color: var(--white); }
 
     .contact-layout {
       display: grid;
-      grid-template-columns: 0.82fr 1.18fr;
-      gap: 20px;
+      grid-template-columns: 0.86fr 1.14fr;
+      gap: 18px;
       align-items: stretch;
-    }
-
-    .contact-panel,
-    .contact-form {
-      border: 2px solid var(--ink);
-      border-radius: 8px;
-      background: rgba(255, 255, 255, 0.7);
-      box-shadow: 0 16px 42px rgba(35, 35, 42, 0.1);
     }
 
     .contact-panel {
       padding: 28px;
-      background:
-        linear-gradient(135deg, rgba(244, 215, 122, 0.84), rgba(255, 143, 69, 0.65)),
-        var(--butter);
+      border: 2px solid var(--ink);
+      background: linear-gradient(135deg, rgba(255, 196, 0, 0.78), rgba(245, 122, 164, 0.48));
     }
 
-    .contact-panel h2 {
-      margin-bottom: 18px;
-      font-size: clamp(2.1rem, 4vw, 4rem);
-      line-height: 1;
-    }
+    .contact-panel h2 { margin-bottom: 16px; font-size: clamp(2rem, 4vw, 3.6rem); line-height: 1; }
+    .contact-panel p { color: #3d372f; line-height: 1.65; }
+    .contact-list { display: grid; gap: 12px; margin-top: 28px; }
+    .contact-item { display: flex; align-items: center; gap: 12px; font-weight: 850; }
+    .dot { width: 12px; height: 12px; border-radius: 50%; background: var(--ink); }
 
-    .contact-panel p {
-      color: #3d372f;
-      line-height: 1.65;
-    }
+    .contact-form { display: grid; gap: 16px; padding: 28px; border: 2px solid var(--ink); }
+    .form-row { display: grid; grid-template-columns: 1fr 1fr; gap: 14px; }
 
-    .contact-list {
-      display: grid;
-      gap: 12px;
-      margin-top: 30px;
-    }
+    label { display: grid; gap: 8px; color: var(--muted); font-size: 0.92rem; font-weight: 850; }
 
-    .contact-item {
-      display: flex;
-      align-items: center;
-      gap: 12px;
-      font-weight: 850;
-    }
-
-    .dot {
-      width: 12px;
-      height: 12px;
-      border-radius: 50%;
-      background: var(--ink);
-    }
-
-    .contact-form {
-      display: grid;
-      gap: 16px;
-      padding: 28px;
-    }
-
-    .form-row {
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      gap: 14px;
-    }
-
-    label {
-      display: grid;
-      gap: 8px;
-      color: var(--muted);
-      font-size: 0.92rem;
-      font-weight: 850;
-    }
-
-    input,
-    textarea {
+    input, textarea {
       width: 100%;
       border: 1px solid var(--line);
       border-radius: 8px;
-      background: rgba(255, 250, 242, 0.84);
+      background: rgba(255, 253, 248, 0.9);
       color: var(--ink);
       padding: 13px 14px;
       outline: none;
     }
 
-    textarea {
-      min-height: 146px;
-      resize: vertical;
-    }
-
-    input:focus,
-    textarea:focus {
-      border-color: var(--ink);
-      box-shadow: 0 0 0 4px rgba(127, 185, 230, 0.28);
-    }
-
-    .form-status {
-      min-height: 24px;
-      margin: -2px 0 0;
-      color: #42610f;
-      font-weight: 850;
-    }
+    textarea { min-height: 146px; resize: vertical; }
+    input:focus, textarea:focus { border-color: var(--ink); box-shadow: 0 0 0 4px rgba(111, 176, 142, 0.22); }
 
     footer {
       display: flex;
@@ -577,256 +399,583 @@
       font-weight: 750;
     }
 
-    @media (max-width: 980px) {
-      .hero,
-      .contact-layout {
-        grid-template-columns: 1fr;
-      }
-
-      .hero-board {
-        min-height: 430px;
-      }
-
-      .stats,
-      .gallery,
-      .services {
-        grid-template-columns: repeat(2, 1fr);
-      }
+    /* ========== MODAL ========== */
+    .modal-backdrop {
+      display: none;
+      position: fixed;
+      inset: 0;
+      z-index: 100;
+      background: rgba(34, 34, 42, 0.52);
+      backdrop-filter: blur(6px);
+      align-items: center;
+      justify-content: center;
+      padding: 20px;
     }
 
-    @media (max-width: 700px) {
-      .nav {
-        align-items: flex-start;
-        flex-direction: column;
-      }
+    .modal-backdrop.open { display: flex; }
 
-      .nav-links {
-        justify-content: flex-start;
-      }
+    .modal {
+      position: relative;
+      width: 100%;
+      max-width: 720px;
+      max-height: 90vh;
+      overflow-y: auto;
+      border: 2px solid var(--ink);
+      border-radius: 12px;
+      background: var(--white);
+      box-shadow: 0 32px 80px rgba(34, 34, 42, 0.22);
+      animation: modalIn 220ms ease;
+    }
 
-      .section {
-        padding-top: 48px;
-        padding-bottom: 48px;
-      }
+    @keyframes modalIn {
+      from { opacity: 0; transform: translateY(18px) scale(0.97); }
+      to   { opacity: 1; transform: translateY(0) scale(1); }
+    }
 
-      .section-heading {
-        align-items: flex-start;
-        flex-direction: column;
-      }
+    .modal-header {
+      position: sticky;
+      top: 0;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 16px;
+      padding: 20px 24px 18px;
+      background: var(--white);
+      border-bottom: 1px solid var(--line);
+      z-index: 2;
+    }
 
-      .stats,
-      .gallery,
-      .services,
-      .form-row {
-        grid-template-columns: 1fr;
-      }
+    .modal-header h3 { margin: 0; font-size: 1.3rem; }
 
-      .hero-board {
-        min-height: 390px;
-      }
+    .modal-close {
+      display: grid;
+      width: 36px;
+      height: 36px;
+      place-items: center;
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      background: none;
+      cursor: pointer;
+      font-size: 1.2rem;
+      flex-shrink: 0;
+    }
 
-      .script-card {
-        padding: 20px;
-      }
+    .modal-close:hover { background: rgba(111, 176, 142, 0.22); border-color: var(--ink); }
+
+    .modal-body { padding: 24px; }
+
+    .modal-tag {
+      display: inline-block;
+      margin-bottom: 16px;
+      padding: 5px 10px;
+      border: 1px solid var(--line);
+      border-radius: 6px;
+      background: rgba(255, 196, 0, 0.22);
+      color: var(--muted);
+      font-size: 0.75rem;
+      font-weight: 950;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+    }
+
+    .modal-section { margin-bottom: 22px; }
+    .modal-section h4 { margin-bottom: 10px; font-size: 0.85rem; font-weight: 900; text-transform: uppercase; letter-spacing: 0.07em; color: var(--muted); }
+    .modal-section p { margin: 0; color: var(--ink); line-height: 1.65; font-size: 0.97rem; }
+
+    .insight-list { display: grid; gap: 10px; margin: 0; padding: 0; list-style: none; }
+
+    .insight-list li {
+      display: flex;
+      gap: 12px;
+      align-items: flex-start;
+      padding: 12px 14px;
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      background: rgba(251, 247, 234, 0.6);
+      font-size: 0.95rem;
+      line-height: 1.55;
+    }
+
+    .insight-num {
+      display: grid;
+      place-items: center;
+      width: 24px;
+      height: 24px;
+      flex-shrink: 0;
+      border-radius: 6px;
+      background: var(--ink);
+      color: var(--white);
+      font-size: 0.72rem;
+      font-weight: 900;
+    }
+
+    .tools-row { display: flex; flex-wrap: wrap; gap: 8px; }
+
+    .tool-chip {
+      padding: 5px 11px;
+      border: 1px solid var(--ink);
+      border-radius: 99px;
+      font-size: 0.8rem;
+      font-weight: 850;
+    }
+
+    .modal-actions { display: flex; flex-wrap: wrap; gap: 10px; padding-top: 4px; }
+
+    .modal-dl {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      padding: 11px 16px;
+      border: 2px solid var(--ink);
+      border-radius: 8px;
+      background: var(--ink);
+      color: var(--white);
+      font-size: 0.9rem;
+      font-weight: 900;
+      cursor: pointer;
+      transition: background 180ms ease, transform 180ms ease;
+    }
+
+    .modal-dl:hover { background: #3a3a45; transform: translateY(-1px); }
+
+    .modal-dl.outline {
+      background: transparent;
+      color: var(--ink);
+    }
+
+    .modal-dl.outline:hover { background: rgba(111, 176, 142, 0.22); }
+
+    @media (max-width: 1080px) {
+      .hero, .contact-layout { grid-template-columns: 1fr; }
+      .hero-art { min-height: 430px; }
+      .gallery, .stats { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+    }
+
+    @media (max-width: 760px) {
+      .nav { align-items: flex-start; flex-direction: column; }
+      .nav-links { justify-content: flex-start; }
+      .section-heading { align-items: flex-start; flex-direction: column; }
+      .gallery, .services, .cert-grid, .stats, .form-row { grid-template-columns: 1fr; }
+      .hero-art { min-height: 340px; }
+      h1 { font-size: clamp(2.65rem, 15vw, 4.4rem); }
+      .modal { max-height: 95vh; }
     }
   </style>
 </head>
 <body>
-  <div class="site-shell">
-    <header class="nav" aria-label="Main navigation">
-      <a class="brand" href="#top" aria-label="Nafilah Daulay home">
-        <span class="brand-mark">ND</span>
-        <span>Nafilah Daulay</span>
-      </a>
-      <nav class="nav-links">
-        <a href="#work">Work</a>
-        <a href="#services">Services</a>
-        <a href="#contact">Contact</a>
-        <a href="CV_Nafilah F. Daulay.pdf" download>CV</a>
-      </nav>
-    </header>
+  <header class="nav" aria-label="Main navigation">
+    <a class="brand" href="#top" aria-label="Nafilah Daulay home">
+      <span class="brand-mark">ND</span>
+      <span>Nafilah Daulay</span>
+    </a>
+    <nav class="nav-links">
+      <a href="#work">Work</a>
+      <a href="#services">Services</a>
+      <a href="#documents">Documents</a>
+      <a href="#contact">Contact</a>
+      <a href="CV_Nafilah F. Daulay (1).pdf" download>CV EN</a>
+      <a href="CV_Nafilah Fahriza Daulay_Indonesia.pdf" download>CV ID</a>
+    </nav>
+  </header>
 
-    <main id="top">
-      <section class="hero" aria-labelledby="hero-title">
-        <div>
-          <p class="eyebrow">Writer • Translator • Data Analyst</p>
-          <h1 id="hero-title">Turning ideas into meaningful projects, one step at a time.</h1>
-          <p class="hero-copy">Hi, I'm Nafilah, an English Literature graduate from Gunadarma University. Welcome to my space, where I share projects, work samples, and creative explorations that highlight my interests, skills, and experiences. Each project represents a step in my learning journey and reflects my commitment to continuous growth and improvement.
-</p>
-          <div class="hero-actions">
-            <a class="button" href="#work">Explore Work</a>
-            <a class="button secondary" href="CV_Nafilah F. Daulay.pdf" download>Download CV</a>
-          </div>
-          <div class="stats" aria-label="Portfolio highlights">
-            <div class="stat"><strong>8</strong><span>Semesters of English Study</span></div>
-<div class="stat"><strong>0+</strong><span>Practice Projects</span></div>
-<div class="stat"><strong>4</strong><span>Areas of Interest</span></div>
-<div class="stat"><strong>∞</strong><span>Learning & Growing</span></div>
-          </div>
+  <main id="top">
+    <section class="hero" aria-labelledby="hero-title">
+      <div>
+        <p class="eyebrow">Writer - Translator - Data Analyst</p>
+        <h1 id="hero-title">Turning ideas into meaningful projects, one step at a time.</h1>
+        <p class="hero-copy">Hi, I am Nafilah, an English Literature graduate from Gunadarma University. Welcome to my space, where I share projects, work samples, and creative explorations that highlight my interests, skills, and experiences. Each project represents a step in my learning journey and reflects my commitment to continuous growth and improvement.</p>
+        <div class="hero-actions">
+          <a class="button" href="#work">Explore Work</a>
+          <a class="button secondary" href="#documents">Documents</a>
+          <a class="button secondary" href="#contact">Contact Me</a>
         </div>
-
-        <div class="hero-board" aria-label="Color palette inspired writing board">
-          <div class="palette-grid" aria-hidden="true">
-            <span class="sky"></span>
-            <span class="lavender"></span>
-            <span class="butter"></span>
-            <span class="matcha"></span>
-            <span class="pink"></span>
-            <span class="tangerine"></span>
-          </div>
-          <div class="script-card">
-            <div class="script-line">Featured line</div>
-            <strong>Learning through every project.</strong>
-            <p>A collection of practice projects, creative experiments, and writing samples that showcase my skills and interests.</p>
-          </div>
+        <div class="stats" aria-label="Portfolio highlights">
+          <div class="stat"><strong>8</strong><span>semesters of English study</span></div>
+          <div class="stat"><strong>5+</strong><span>practice projects</span></div>
+          <div class="stat"><strong>4</strong><span>focus areas</span></div>
+          <div class="stat"><strong>2026</strong><span>portfolio year</span></div>
         </div>
-      </section>
+      </div>
 
-      <section class="section" id="work" aria-labelledby="work-title">
+      <figure class="hero-figure">
+  <div class="hero-art" role="img" aria-label="Colorful abstract botanical illustration"></div>
+  <figcaption>Art by @rawpixel-com</figcaption>
+</figure>
+    </section>
+
+    <section class="section" id="work" aria-labelledby="work-title">
+      <div class="section-inner">
         <div class="section-heading">
           <h2 id="work-title">Work Gallery</h2>
-          <p>A collection of personal projects, mock campaigns, and writing samples created to explore different writing styles and creative ideas.</p>
+          <p>A collection of personal projects, practice work, and academic samples.</p>
         </div>
 
         <div class="filters" aria-label="Work category filters">
-  <button class="filter-button active" type="button" data-filter="all">All</button>
-  <button class="filter-button" type="button" data-filter="copywriting">Copywriting</button>
-  <button class="filter-button" type="button" data-filter="scriptwriting">Scriptwriting</button>
-  <button class="filter-button" type="button" data-filter="translation">Translation</button>
-  <button class="filter-button" type="button" data-filter="analysis">Excel/Data Analysis</button>
-</div>
+          <button class="filter-button active" type="button" data-filter="all">All</button>
+          <button class="filter-button" type="button" data-filter="copywriting">Copywriting</button>
+          <button class="filter-button" type="button" data-filter="scriptwriting">Scriptwriting</button>
+          <button class="filter-button" type="button" data-filter="translation">Translation</button>
+          <button class="filter-button" type="button" data-filter="analysis">Data Analysis</button>
+          <button class="filter-button" type="button" data-filter="certificates">Certificates</button>
+        </div>
 
         <div class="gallery">
+          <!-- 01 Copywriting -->
           <article class="project" data-category="copywriting">
             <div class="project-art">01</div>
             <div class="project-body">
-              <span class="tag">Practice Project</span>
-              <h3>Copywriting Projects</h3>
-              <p>Practice projects focused on crafting clear, engaging, and audience-centered content, including promotional copy, product descriptions, website content, and brand messaging.</p>
+              <span class="tag">Copywriting</span>
+              <h3>Copywriting Samples</h3>
+              <p>Practice copywriting projects and writing samples for campaign ideas, brand messaging, and promotional content.</p>
+              <div class="project-links">
+                <a href="Dummy Project Copywriting.docx" download>Copywriting Project Word</a>
+                <a href="https://medium.com/@nafilahfahriza/teen-skin-101-finding-safe-kind-skincare-brands-b2deadbe0edf" target="_blank" rel="noopener">Medium Article</a>
+              </div>
             </div>
           </article>
+
+          <!-- 02 Scriptwriting -->
           <article class="project" data-category="scriptwriting">
             <div class="project-art">02</div>
             <div class="project-body">
-              <span class="tag">Practice Project</span>
+              <span class="tag">Scriptwriting</span>
               <h3>Scriptwriting Projects</h3>
-              <p>Creative script samples developed for short-form videos, advertisements, and storytelling projects, emphasizing structure, pacing, and audience engagement.</p>
+              <p>Practice scriptwriting projects and writing samples for campaign ideas, brand messaging, and promotional content.</p>
+              <div class="project-links">
+                <a href="Dummy Project Scriptwriting.docx" download>Scriptwriting Project Word</a>
+              </div>
             </div>
           </article>
+
+          <!-- 03 Translation -->
           <article class="project" data-category="translation">
             <div class="project-art">03</div>
             <div class="project-body">
-              <span class="tag">Practice Project</span>
-              <h3>Translation Projects</h3>
-              <p>Translation samples demonstrating the ability to accurately convey meaning between English and Indonesian while maintaining clarity, context, and natural language flow.</p>
+              <span class="tag">Translation</span>
+              <h3>Translation Practice</h3>
+              <p>English-Indonesian translation and language practice with attention to accuracy, clarity, and natural meaning.</p>
+              <div class="project-links">
+                <a href="Sertifikat_Nafilah Fahriza Daulay.pdf" target="_blank" rel="noopener">View certificate file</a>
+              </div>
             </div>
           </article>
 
-          <article class="project" data-category="analysis">
+          <!-- 04 Data Analysis — TokoBerkah -->
+          <article class="project" data-category="analysis" data-modal="modal-tokoberkah">
             <div class="project-art">04</div>
             <div class="project-body">
-              <span class="tag">Practice Project</span>
-              <h3>Excel/Data Analysis</h3>
-              <p>Projects showcasing data cleaning, visualization, and analytical skills using real and sample datasets to identify trends, generate insights, and support decision-making.</p>
-              
+              <span class="tag">Data Analysis</span>
+              <h3>E-Commerce Sales Analysis</h3>
+              <p>Sales trend, product profitability, and customer city analysis for a dummy e-commerce store using Excel.</p>
+              <button class="open-modal" data-modal="modal-tokoberkah">View Case Study →</button>
+            </div>
+          </article>
+
+          <!-- 05 Data Analysis — Warung Selera Nusantara -->
+          <article class="project" data-category="analysis" data-modal="modal-warung">
+            <div class="project-art">05</div>
+            <div class="project-body">
+              <span class="tag">Data Analysis</span>
+              <h3>F&B Restaurant Analysis</h3>
+              <p>Peak hour, busiest day, best-selling menu, and branch performance analysis for a dummy restaurant chain.</p>
+              <button class="open-modal" data-modal="modal-warung">View Case Study →</button>
+            </div>
+          </article>
+
+          <!-- 06 Data Analysis — AdaPromo Digital -->
+          <article class="project" data-category="analysis" data-modal="modal-adapromo">
+            <div class="project-art">06</div>
+            <div class="project-body">
+              <span class="tag">Data Analysis</span>
+              <h3>Marketing Campaign Analysis</h3>
+              <p>CTR, CVR, ROAS, and CPA analysis across Google, Meta, and TikTok Ads to identify the most efficient campaigns.</p>
+              <button class="open-modal" data-modal="modal-adapromo">View Case Study →</button>
+            </div>
+          </article>
+
+          <!-- 07 Certificates -->
+          <article class="project" data-category="certificates">
+            <div class="project-art">07</div>
+            <div class="project-body">
+              <span class="tag">Certificates</span>
+              <h3>Certificates of Achievement</h3>
+              <p>A complete file containing certificates and learning achievements.</p>
+              <div class="project-links">
+                <a href="Sertifikat_Nafilah Fahriza Daulay.pdf" target="_blank" rel="noopener">Academic certificates PDF</a>
+                <a href="Sertifikat Penerjemahan BNSP.pdf" target="_blank" rel="noopener">BNSP certificate PDF</a>
+                <a href="Coursera Certificates.pdf" target="_blank" rel="noopener">Coursera certificates PDF</a>
+              </div>
             </div>
           </article>
         </div>
-      </section>
+      </div>
+    </section>
 
-      <section class="section" id="services" aria-labelledby="services-title">
+    <!-- ========== MODAL: TokoBerkah ========== -->
+    <div class="modal-backdrop" id="modal-tokoberkah" role="dialog" aria-modal="true" aria-labelledby="modal-tokoberkah-title">
+      <div class="modal">
+        <div class="modal-header">
+          <h3 id="modal-tokoberkah-title">TokoBerkah — E-Commerce Sales Analysis</h3>
+          <button class="modal-close" aria-label="Close">✕</button>
+        </div>
+        <div class="modal-body">
+          <span class="modal-tag">Data Analysis · Excel · Dummy Project</span>
+
+          <div class="modal-section">
+            <h4>Overview</h4>
+            <p>Analysed 800 orders, 200 customers, and 24 products across January–December 2025 for a dummy Indonesian e-commerce store. The goal was to answer four business questions around monthly trends, product profitability, and regional revenue.</p>
+          </div>
+
+          <div class="modal-section">
+            <h4>Key Insights</h4>
+            <ul class="insight-list">
+              <li><span class="insight-num">1</span>December recorded 17× more orders than January (156 vs 9), confirming strong year-end seasonal demand driven by Harbolnas and holiday shopping.</li>
+              <li><span class="insight-num">2</span>The best-selling product by volume (Lampu LED Hias 5m, 537 units) was also the most profitable — a rare double-win that makes it the store's strategic hero product.</li>
+              <li><span class="insight-num">3</span>Rice Cooker Mini ranked #1 in revenue but only #3 in profit, showing that high-priced items don't always yield the best margins.</li>
+              <li><span class="insight-num">4</span>Jakarta led in both order count (170) and revenue (Rp57 M), while Denpasar outranked Bandung in revenue despite fewer orders — indicating higher average order values per customer.</li>
+            </ul>
+          </div>
+
+          <div class="modal-section">
+            <h4>Tools & Skills</h4>
+            <div class="tools-row">
+              <span class="tool-chip">Microsoft Excel</span>
+              <span class="tool-chip">PivotTable & PivotChart</span>
+              <span class="tool-chip">VLOOKUP (multi-table)</span>
+              <span class="tool-chip">Data Cleaning</span>
+              <span class="tool-chip">Revenue & Profit Calculation</span>
+              <span class="tool-chip">Seasonal Trend Analysis</span>
+            </div>
+          </div>
+
+          <div class="modal-section">
+            <h4>Dataset</h4>
+            <p>800 orders · 200 customers · 24 products · 4 tables (orders, order_items, products, customers) · Jan–Dec 2025</p>
+          </div>
+
+          <div class="modal-actions">
+            <a class="modal-dl" href="TokoBerkah_Dummy_Project_Data_Analysis.xlsx" download>⬇ Download Excel File</a>
+            <a class="modal-dl outline" href="https://painted-sceptre-368.notion.site/Analisis-Penjualan-E-Commerce-TokoBerkah-386b6db6d67e80cab981eafc7d6f949d" target="_blank" rel="noopener">View on Notion ↗</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ========== MODAL: Warung Selera Nusantara ========== -->
+    <div class="modal-backdrop" id="modal-warung" role="dialog" aria-modal="true" aria-labelledby="modal-warung-title">
+      <div class="modal">
+        <div class="modal-header">
+          <h3 id="modal-warung-title">Warung Selera Nusantara — F&B Restaurant Analysis</h3>
+          <button class="modal-close" aria-label="Close">✕</button>
+        </div>
+        <div class="modal-body">
+          <span class="modal-tag">Data Analysis · Excel · Dummy Project</span>
+
+          <div class="modal-section">
+            <h4>Overview</h4>
+            <p>Analysed 850 transactions across 4 restaurant branches in Jakarta, Bandung, Depok, and Surabaya for January–December 2025. Focus areas: operational scheduling, menu strategy, and branch performance benchmarking.</p>
+          </div>
+
+          <div class="modal-section">
+            <h4>Key Insights</h4>
+            <ul class="insight-list">
+              <li><span class="insight-num">1</span>Two daily peak hours emerged: 12:00 (117 transactions) and 19:00 (107 transactions) — a classic F&B double-peak pattern useful for staff scheduling.</li>
+              <li><span class="insight-num">2</span>Weekend days (Sunday 166, Saturday 163) generated nearly twice the weekday average, signalling a family/leisure dining pattern rather than a weekday office crowd.</li>
+              <li><span class="insight-num">3</span>Ayam Geprek Sambal Bawang dominated all three metrics — volume, revenue, and profit — with 694 units sold, nearly 3× its closest competitor. A true hero product.</li>
+              <li><span class="insight-num">4</span>Sudirman (Jakarta) contributed ~36% of all transactions, almost double the lowest-performing branch (Dago, Bandung), suggesting location-driven demand differences worth investigating.</li>
+            </ul>
+          </div>
+
+          <div class="modal-section">
+            <h4>Tools & Skills</h4>
+            <div class="tools-row">
+              <span class="tool-chip">Microsoft Excel</span>
+              <span class="tool-chip">PivotTable (Group by Hours)</span>
+              <span class="tool-chip">TEXT() for day extraction</span>
+              <span class="tool-chip">VLOOKUP (3-table join)</span>
+              <span class="tool-chip">Data Cleaning (PROPER)</span>
+              <span class="tool-chip">Branch Comparison</span>
+            </div>
+          </div>
+
+          <div class="modal-section">
+            <h4>Dataset</h4>
+            <p>850 transactions · 4 branches · 24 menu items · 4 tables (transaksi, transaksi_detail, menu, cabang) · Jan–Dec 2025</p>
+          </div>
+
+          <div class="modal-actions">
+            <a class="modal-dl" href="WarungSeleraNusantara_Dummy_Project_Data_Analysis.xlsx" download>⬇ Download Excel File</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ========== MODAL: AdaPromo Digital ========== -->
+    <div class="modal-backdrop" id="modal-adapromo" role="dialog" aria-modal="true" aria-labelledby="modal-adapromo-title">
+      <div class="modal">
+        <div class="modal-header">
+          <h3 id="modal-adapromo-title">AdaPromo Digital — Marketing Campaign Analysis</h3>
+          <button class="modal-close" aria-label="Close">✕</button>
+        </div>
+        <div class="modal-body">
+          <span class="modal-tag">Data Analysis · Excel · Dummy Project</span>
+
+          <div class="modal-section">
+            <h4>Overview</h4>
+            <p>Evaluated 15 digital ad campaigns across Google Ads, Meta Ads, and TikTok Ads throughout 2025. Calculated performance metrics (CTR, CVR, CPA, ROAS) from raw daily impression and spend data to identify which platforms and campaigns delivered the best return on investment.</p>
+          </div>
+
+          <div class="modal-section">
+            <h4>Key Insights</h4>
+            <ul class="insight-list">
+              <li><span class="insight-num">1</span>Google Ads delivered the highest ROAS overall, led by the "Search Brand Defense" campaign — high purchase intent from branded search queries drove strong conversion rates.</li>
+              <li><span class="insight-num">2</span>"Story Ads Eksperimen" (Meta Ads) had the lowest ROAS despite a sizeable budget, identifying it as the clearest candidate for budget reallocation.</li>
+              <li><span class="insight-num">3</span>"Konten Viral Challenge" (TikTok Ads) showed a high CTR but low CVR — a classic funnel drop-off where users clicked but did not convert, suggesting a landing page or offer mismatch.</li>
+              <li><span class="insight-num">4</span>Harbolnas campaigns (11.11 & 12.12) performed above their respective platform averages, confirming that seasonal sale moments amplify campaign effectiveness across all channels.</li>
+            </ul>
+          </div>
+
+          <div class="modal-section">
+            <h4>Tools & Skills</h4>
+            <div class="tools-row">
+              <span class="tool-chip">Microsoft Excel</span>
+              <span class="tool-chip">VLOOKUP</span>
+              <span class="tool-chip">CTR / CVR / CPA / ROAS Calculation</span>
+              <span class="tool-chip">PivotTable</span>
+              <span class="tool-chip">Funnel Analysis</span>
+              <span class="tool-chip">Data Cleaning & Validation</span>
+            </div>
+          </div>
+
+          <div class="modal-section">
+            <h4>Dataset</h4>
+            <p>15 campaigns · 3 platforms · 958 daily performance rows · 2 tables (campaign, performance_harian) · Jan–Dec 2025</p>
+          </div>
+
+          <div class="modal-actions">
+            <a class="modal-dl" href="AdaPromoDigital_Dummy_Data.xlsx" download>⬇ Download Excel File</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <section class="section" id="services" aria-labelledby="services-title">
+      <div class="section-inner">
         <div class="section-heading">
-          <h2 id="services-title">Specialties</h2>
-          <p>A collection of skills and interests developed through academic projects, certifications, and practical experience in writing, translation, and data analysis.
-</p>
+          <h2 id="services-title">Focus Areas</h2>
+          <p>Areas I am developing through academic work, practice projects, and creative exploration.</p>
         </div>
         <div class="services">
-            <article class="service">
-            <div class="service-icon">C</div>
-            <h3>Copywriting</h3>
-            <p>Creating clear, engaging, and audience-focused content, including website copy, product descriptions, promotional materials, and brand messaging.</p>
-            </article>
-            <article class="service">
-            <div class="service-icon">S</div>
-            <h3>Scriptwriting</h3>
-            <p>Creative scripts, storytelling projects, and content ideas developed through personal and portfolio projects.</p>
+          <article class="service">
+            <div class="icon">W</div>
+            <h3>Copywriting & Scriptwriting</h3>
+            <p>Copywriting and scriptwriting, including content ideas, captions, short scripts, and creative writing—delivered with clear structure and a consistent voice.</p>
           </article>
           <article class="service">
-            <div class="service-icon">T</div>
+            <div class="icon">T</div>
             <h3>Translation</h3>
-            <p>English–Indonesian, Indonesian-English translation and language support with attention to clarity, meaning, and natural communication.</p>
+            <p>English-Indonesian, Indonesian-English translation support with attention to meaning, tone, and readable language.</p>
           </article>
           <article class="service">
-            <div class="service-icon">DA</div>
-            <h3>Excel/Data Analysis</h3>
-            <p>Data analysis and research skills developed through academic work, certification programs, and practical projects.</p>
+            <div class="icon">D</div>
+            <h3>Data Analysis</h3>
+            <p>Research, analysis, and structured thinking developed through coursework and learning projects.</p>
           </article>
         </div>
-      </section>
+      </div>
+    </section>
 
-      <section class="section" id="contact" aria-labelledby="contact-title">
-        <div class="contact-layout">
-          <aside class="contact-panel">
-            <h2 id="contact-title">Let's Connect</h2>
-            <p>Thank you for visiting my portfolio. Feel free to reach out if you'd like to discuss opportunities, collaborations, or simply connect.</p>
-            <div class="contact-list">
-              <div class="contact-item"><span class="dot"></span>nafilahfahriza@gmail.com</div>
-              <div class="contact-item"><span class="dot"></span>Linkedin.com/in/nafilah-fahriza-daulay/</div>
-              <div class="contact-item"><span class="dot"></span>Seeking opportunities to learn, contribute, and grow professionally</div>
-              <div class="contact-item"><span class="dot"></span>Based in Indonesia • Available for remote opportunities</div>
-            </div>
-          </aside>
+    <section class="section" id="contact" aria-labelledby="contact-title">
+      <div class="section-inner contact-layout">
+        <aside class="contact-panel">
+          <h2 id="contact-title">Let's Connect</h2>
+          <p>Thank you for visiting my portfolio. Feel free to reach out if you would like to discuss opportunities, collaborations, or simply connect.</p>
+          <div class="contact-list">
+            <div class="contact-item"><span class="dot"></span>nafilahfahriza@gmail.com</div>
+            <div class="contact-item"><span class="dot"></span>Linkedin.com/nafilah-fahriza-daulay/</div>
+            <div class="contact-item"><span class="dot"></span>Open to writing, translation, and project opportunities</div>
+            <div class="contact-item"><span class="dot"></span>Remote collaboration available</div>
+          </div>
+        </aside>
+        <form class="contact-form" action="https://api.web3forms.com/submit" method="POST">
+          <input type="hidden" name="access_key" value="da06c9d1-a090-4e70-87b0-1ec700b8107d">
+          <input type="hidden" name="subject" value="New portfolio inquiry from Nafilah Daulay website">
+          <div class="form-row">
+            <label>Name<input name="name" autocomplete="name" required placeholder="Your name"></label>
+            <label>Email<input type="email" name="email" autocomplete="email" required placeholder="you@example.com"></label>
+          </div>
+          <label>Project Type<input name="project" required placeholder="Writing, translation, data, collaboration..."></label>
+          <label>Message<textarea name="message" required placeholder="Tell me what you would like to discuss."></textarea></label>
+          <button class="button" type="submit">Send Inquiry</button>
+        </form>
+      </div>
+    </section>
+  </main>
 
-          <form class="contact-form" id="contactForm" action="https://api.web3forms.com/submit" method="POST">
-            <input type="hidden" name="access_key" value="da06c9d1-a090-4e70-87b0-1ec700b8107d">
-            <input type="hidden" name="subject" value="New portfolio inquiry from Nafilah Daulay website">
-            <div class="form-row">
-              <label>
-                Name
-                <input name="name" autocomplete="name" required placeholder="Your name">
-              </label>
-              <label>
-                Email
-                <input type="email" name="email" autocomplete="email" required placeholder="you@example.com">
-              </label>
-            </div>
-            <label>
-              Project Type
-              <input name="project" required placeholder="Launch copy, video script, brand voice...">
-            </label>
-            <label>
-              Message
-              <textarea name="message" required placeholder="Tell me what you are making, who it is for, and when you need it."></textarea>
-            </label>
-            <p class="form-status" id="formStatus" role="status" aria-live="polite"></p>
-            <button class="button" type="submit">Send Inquiry</button>
-          </form>
-        </div>
-      </section>
-    </main>
-
-    <footer>
-      <span>© 2026 Nafilah Daulay. Portfolio of writing, translation, and data analysis.</span>
-      <span>Sky · Lavender · Butter · Matcha · Pink · Tangerine</span>
-    </footer>
-  </div>
+  <footer>
+    <span>2026 Nafilah Daulay. Portfolio of writing, translation, and creative projects.</span>
+    <span>Fresh colour.</span>
+  </footer>
 
   <script>
+    // ---- Filter buttons ----
     const filterButtons = document.querySelectorAll(".filter-button");
     const projects = document.querySelectorAll(".project");
 
     filterButtons.forEach((button) => {
       button.addEventListener("click", () => {
         const filter = button.dataset.filter;
-
         filterButtons.forEach((item) => item.classList.remove("active"));
         button.classList.add("active");
-
         projects.forEach((project) => {
           const showProject = filter === "all" || project.dataset.category === filter;
           project.classList.toggle("hidden", !showProject);
         });
       });
-    });  </script>
+    });
+
+    // ---- Modal open/close ----
+    function openModal(id) {
+      const backdrop = document.getElementById(id);
+      if (!backdrop) return;
+      backdrop.classList.add("open");
+      document.body.style.overflow = "hidden";
+      backdrop.querySelector(".modal-close").focus();
+    }
+
+    function closeModal(backdrop) {
+      backdrop.classList.remove("open");
+      document.body.style.overflow = "";
+    }
+
+    // Open via "View Case Study" buttons
+    document.querySelectorAll(".open-modal").forEach((btn) => {
+      btn.addEventListener("click", (e) => {
+        e.stopPropagation();
+        openModal(btn.dataset.modal);
+      });
+    });
+
+    // Close via ✕ button
+    document.querySelectorAll(".modal-close").forEach((btn) => {
+      btn.addEventListener("click", () => {
+        closeModal(btn.closest(".modal-backdrop"));
+      });
+    });
+
+    // Close by clicking backdrop
+    document.querySelectorAll(".modal-backdrop").forEach((backdrop) => {
+      backdrop.addEventListener("click", (e) => {
+        if (e.target === backdrop) closeModal(backdrop);
+      });
+    });
+
+    // Close with Escape key
+    document.addEventListener("keydown", (e) => {
+      if (e.key === "Escape") {
+        document.querySelectorAll(".modal-backdrop.open").forEach(closeModal);
+      }
+    });
+  </script>
 </body>
 </html>
